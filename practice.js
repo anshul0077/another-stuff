@@ -43,3 +43,75 @@ else{
     
 
 }
+let num=1234
+let rev=0
+while(num>0){
+    let digit=num%10
+    rev=rev*10+digit
+    num=Math.floor(num/10)
+} 
+console.log(rev);
+
+
+
+
+let rev1=0
+let num2=121
+let original=num2
+while(num2>0){
+    let digit=num2%10
+    rev1=rev1*10+digit
+    num2=Math.floor(num2/10)
+}
+
+if(rev1==original){
+    console.log(`this number is a Palindrome`);
+    
+}
+else{
+     console.log(`this number is not a Palindrome`);
+}
+
+
+
+
+let userNumber=12345
+let summ=0
+while(userNumber>0){
+    let digit=userNumber%10
+    summ+=digit
+    userNumber=Math.floor(userNumber/10)
+}
+console.log(summ);
+
+let r=1
+for(let i=1;i<=4;i++){
+    let rr=""
+    for(let j=1;j<=i;j++){
+       rr+= r + ""
+       r++
+    }
+    console.log(rr);
+}
+
+
+
+for(let i=5;i>=1;i--){
+    let line=""
+    for(let j=i;j>=1;j--){
+        line+="*"
+    }
+    console.log(line);
+    
+}
+
+
+for(let i=5;i>=1;i--){
+    let line=""
+    for(let j=i;j>=1;j--){
+        line+="*"
+    }
+    console.log(line);
+    
+}
+
