@@ -114,4 +114,86 @@ for(let i=5;i>=1;i--){
     console.log(line);
     
 }
+let row=5
+for(let i=1;i<=row;i++){
+    let line=" "
+    for(let space=1;space<=row-i;space++){
+       line+=" "
+    }
+    for(let j=1;j<=i;j++){
+        line+="*"
+    }
+    console.log(line);
+    
+}
+
+for(let i=1;i<=5;i++){
+    let line=""
+    for(let j=1;j<=i;j++){
+        line+="  "+j
+    }
+    console.log(line);
+    
+}
+let row1=5
+for(let i=1;i<=row1;i++){
+    let line= " "
+    for(let space=1 ;space<=row1-i;space++){
+        line+=" "
+    }
+    for(let j=1;j<=i;j++){
+        line+=j
+    }
+    console.log(line);
+    
+}
+
+let number222=1234
+let summmmm=0
+while(number222>0){
+    let digit=number222%10
+    summmmm+=digit
+    number222=Math.floor(number222/10)
+}
+console.log(summmmm);
+
+
+
+let anotherNumber=34567822
+let countre=0
+while(anotherNumber>0){
+   anotherNumber= Math.floor(anotherNumber/10)
+   countre++
+}
+console.log(countre);
+
+
+
+// 
+
+let eSum=0
+let nnn=48253
+while(nnn>0){
+    let digit=nnn%10
+    if(digit%2===0){
+   eSum+=digit
+        
+    }
+    nnn=Math.floor(nnn/10)
+}
+console.log(eSum);
+
+
+// amstrong number checker
+
+let input=153
+let amst=0
+while(input>0){
+    let digit=input%10
+amst+=(digit**3)
+
+
+input=Math.floor(input/10)
+}
+console.log(amst);
 
