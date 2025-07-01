@@ -131,3 +131,75 @@ function primeOrNot(a){
 console.log(primeOrNot(12));
 
 
+
+function printPrime(){
+    for(let i=1;i<=100;i++){
+        let count=0
+
+for( let j=1;j<=i;j++){
+    
+    if(i%j===0){
+ 
+    count++
+ 
+   
+ }
+
+}
+ if(count===2){
+  
+   console.log(i);
+    
+}
+
+
+    }
+    
+}
+
+printPrime()
+
+
+function factoria(a){
+ let sum=1;
+ for(i=1;i<=a;i++){
+    sum*=i
+ }
+
+ return sum
+}
+console.log(factoria(5))
+
+
+// digit count
+
+function digitCount(a){
+    let count=0
+while(a>0){
+    let digit=a%10
+    count++
+    a=Math.floor(a/10)
+}
+return count
+
+}
+console.log(digitCount(1234545));
+
+
+let cc=()=>{
+
+    let count=0
+    return ()=>{
+        count++
+        return count
+    }
+}
+let ccc=cc()
+console.log(ccc());
+console.log(ccc());
+console.log(ccc());
+console.log(ccc());
+
+console.log(ccc());
+
+
