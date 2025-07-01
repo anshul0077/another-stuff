@@ -73,3 +73,20 @@ console.log(stats);
 
 
 // discount
+
+function discountCalculator(value){
+
+return function discount(value){
+   let dis= value * (15/100)
+return  (value - dis)
+}
+}
+let res=discountCalculator(200)
+console.log(res(200))
+
+
+function square(number){
+return 2**2
+}
+console.log(square(2))
+
