@@ -90,3 +90,44 @@ return 2**2
 }
 console.log(square(2))
 
+function greaterNumber(a,b){
+    
+  return a>b? a: b;
+}
+console.log(greaterNumber(12,34))
+
+function evenORodd(a){
+if(a%2===0) return "even"
+return "odd"
+}
+console.log(evenORodd(4))
+
+function sumUpTo(a){
+ let total=0
+ for(let i=1;i<=a;i++){
+    total+=i
+ }
+ return total
+}
+(console.log(sumUpTo(5)))
+
+function primeOrNot(a){
+    let toatl=0
+    for(let i=1;i<=a;i++){
+        if(a%i==0){
+            toatl++
+        }
+    }
+        if(toatl===2){
+            return "given number is  prime number"
+        }
+        else{
+            return "given number is not  prime number"
+        }
+
+    
+
+}
+console.log(primeOrNot(12));
+
+
