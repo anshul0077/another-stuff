@@ -273,3 +273,27 @@ else return "This is not a amstrong number"
 }
 console.log(amstrong(123))
  
+function greetUser(a){
+
+return function(){
+    return `Hello, ${a}! welcome back`
+}
+
+}
+let greet=greetUser("Anshul")
+console.log(greet());
+
+
+let power=(num,pow)=>{
+return Math.pow(num,pow)
+}
+console.log(power(2,4));
+
+
+function countdown(n){
+if(n<=0)return
+console.log(n);
+countdown(n-1)
+
+}
+countdown(5)
