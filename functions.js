@@ -302,4 +302,17 @@ function sumreccursion(a){
 if(a==0)return 0;
 return (a%10) +sumreccursion(Math.floor(a/10))
 }
-console.log(sumreccursion(12345))
+console.log(sumreccursion(123))
+
+
+function recurssionReverseHelper(n,result){
+    if( n==0)return result
+let digit = n%10
+let rev= result*10+digit
+return recurssionReverseHelper(Math.floor(n/10),rev)
+}
+function recurssionReverse(n){
+  return recurssionReverseHelper(n,0)
+}
+ console.log(recurssionReverse(12345))
+
