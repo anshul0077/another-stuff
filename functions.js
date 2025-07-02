@@ -297,3 +297,9 @@ countdown(n-1)
 
 }
 countdown(5)
+
+function sumreccursion(a){
+if(a==0)return 0;
+return (a%10) +sumreccursion(Math.floor(a/10))
+}
+console.log(sumreccursion(12345))
