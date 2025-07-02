@@ -203,3 +203,73 @@ console.log(ccc());
 console.log(ccc());
 
 
+
+
+
+function formatName(fname,lname){
+        let firstletter= fname.charAt(0).toUpperCase()
+        
+        let firstletter2=lname.charAt(0).toUpperCase()
+
+    return `${firstletter2}${lname.slice(1)} , ${firstletter}${fname.slice(1)}`
+}
+
+console.log(formatName("anshul","choudhary"))
+
+
+
+function countVowles(a){
+    let caseSen =a.toLowerCase()
+let counter=0;
+for (const e of caseSen) {
+    if(e=="a" || e=="e" || e=="i" || e=="i" || e=="o" || e=="u"){
+        counter++
+    }
+    
+}
+return counter
+}
+console.log(countVowles("aeiou"))
+
+
+function reversNumber(a){
+let actualNumber= Number(a)
+
+
+let rev=0
+if(actualNumber ==NaN){
+    return "Enter the Number given number is not a number"
+}else{
+
+
+    while(actualNumber>0){
+        
+        let digit=actualNumber%10
+        rev =rev*10+digit
+        actualNumber=Math.floor(actualNumber/10)
+    }
+}
+
+return rev
+}
+
+ console.log(reversNumber("3a1"))
+
+
+
+function amstrong(a){
+let amg=0
+let actualNumber=a
+while(a>0){
+    let digit=a%10
+    amg+=Math.pow(digit,3)
+    a=Math.floor(a/10)
+
+}
+console.log(amg);
+
+if(amg===actualNumber) return "This is a amstrong number"
+else return "This is not a amstrong number"
+}
+console.log(amstrong(123))
+ 
