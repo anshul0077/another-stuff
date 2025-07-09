@@ -316,3 +316,35 @@ function recurssionReverse(n){
 }
  console.log(recurssionReverse(12345))
 
+
+ // check palindrom
+
+function palindrom(a){
+let original=a
+let rev=0
+while(a>0){
+    let digit=a%10
+    rev=rev*10+digit
+    a=Math.floor(a/10)
+ 
+    
+}
+
+if(original===rev){
+    return "ture"
+    
+}
+else{
+ return "false"
+}
+}
+console.log(palindrom(162));
+
+function  greetHour(a){
+if(a>=5 && a<=11)return "Good Morning"
+else if(a>=12 && a<=17) return "Good AfterNoon"
+else if(a>=18 && a<=20)return "Good Evening"
+return "Good night"
+}
+console.log(greetHour(21));
+
