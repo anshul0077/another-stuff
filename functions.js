@@ -390,3 +390,60 @@ else{
 }
 
 console.log(CoPrime(12,18));
+
+function perfectNumber(a){
+    let result=0
+for(let i=1;i<a;i++){
+    if(a%i==0){
+result+=i
+    }
+}
+if(result===a){
+    return "True"
+}
+else{
+    return "False"
+}
+}
+console.log(perfectNumber(29));
+
+function fab(n){
+let a=0
+let b=1
+let sum=0
+console.log(a);
+console.log(b);
+for(let i=1;i<=n;i++){
+    sum=a+b
+     a=b
+     b=sum
+    sum= a+b
+
+
+
+
+ console.log(a);
+ 
+
+
+}
+
+
+}
+console.log(fab(7));
+
+
+countRepeatnum=(a)=>{
+let counter=0
+
+while(a>0){
+    let digit=a%10
+    a=Math.floor(a/10)
+    if(digit===7){
+        counter++
+    }
+}
+return counter
+}
+
+console.log(countRepeatnum(7070707070707070))
