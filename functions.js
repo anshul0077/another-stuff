@@ -348,3 +348,45 @@ return "Good night"
 }
 console.log(greetHour(21));
 
+function gcd(a,b){
+    let result=1
+for(let i=1;i<=Math.min(a,b);i++){
+    if(a%i==0 && b%i==0){
+       result=i
+
+    }
+    
+}
+return result
+
+}
+console.log(gcd(100,25));
+
+function countNumber(a){
+let counter=0
+    while(a>0){
+        a=Math.floor(a/10)
+        counter++
+    }
+    return counter
+}
+console.log(countNumber(12345));
+
+
+function CoPrime(a,b){
+    let result=0
+for(let i=1;i<=Math.max(a,b);i++){
+    if(a%i==0&&b%i==0){
+        
+        result=i
+    }
+}
+if(result===1){
+    return "Numbers are co-Prime"
+}
+else{
+    return "Number is not co-prime"
+}
+}
+
+console.log(CoPrime(12,18));
