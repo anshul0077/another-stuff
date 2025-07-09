@@ -447,3 +447,70 @@ return counter
 }
 
 console.log(countRepeatnum(7070707070707070))
+
+
+
+function product(a){
+    let productmul=1
+    while(a>0){
+        let digit=a%10
+        productmul*=digit
+        a=Math.floor(a/10)
+    }
+    return productmul
+
+}
+console.log(product(1234));
+
+
+let prodDigit=(a)=>{
+   let productmul=1
+    while(a>0){
+        let digit=a%10
+        productmul*=digit
+        a=Math.floor(a/10)
+    }
+    return productmul
+}
+console.log(prodDigit(1234));
+
+function createMultiplier(){
+
+
+    return function mulit(a){
+ 
+        return a*2
+    }
+
+}
+let  num=createMultiplier()
+console.log(num(4));
+
+let countVowlesFat=(a)=>{
+ let counter = 0
+for (const e of a) {
+    if(e=="a" || e=="e" || e=="i" || e=="i" || e=="o" || e=="u"){
+        counter++
+    }
+    
+}
+return counter
+}
+console.log(countVowlesFat('BrutalCode'))
+
+function HOFfun(num,fun){
+return(fun(num))
+}
+function square(a){
+    return a**2
+}
+console.log(HOFfun(4,square));
+
+function CheckNumber(num,fun){
+return fun(num)
+}
+function evenOdd(a){
+    if(a%2==0) return  "Even Number"
+    else return "Odd number"
+}
+console.log(CheckNumber(3,evenOdd));
