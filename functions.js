@@ -514,3 +514,12 @@ function evenOdd(a){
     else return "Odd number"
 }
 console.log(CheckNumber(3,evenOdd));
+
+        function greetUser(name,call){
+        return call(name)
+        }
+        function Message(a){
+        return ` "Hello ,${a}! Have a great day!"`
+        }
+        console.log(greetUser('Anshul',Message));
+
