@@ -515,11 +515,39 @@ function evenOdd(a){
 }
 console.log(CheckNumber(3,evenOdd));
 
-        function greetUser(name,call){
-        return call(name)
-        }
-        function Message(a){
-        return ` "Hello ,${a}! Have a great day!"`
-        }
-        console.log(greetUser('Anshul',Message));
+        // function greetUser(name,call){
+        // return call(name)
+        // }
+        // function Message(a){
+        // return ` "Hello ,${a}! Have a great day!"`
+        // }
+        // console.log(greetUser('Anshul',Message));
 
+
+        function fact (a){
+     if( a==0||a==1) return 1
+     
+
+               return a* fact(a-1) 
+
+
+
+
+        }
+        console.log(fact(5))
+        function reverseString(a){
+            let reverse=''
+          let casef=a.toLowerCase()
+          for(let i=casef.length-1;i>=0;i--){
+
+             
+            reverse+= casef.charAt(i)
+            
+          }
+          return reverse
+               
+                 
+          
+
+        }
+        console.log(reverseString("Anshul"))
