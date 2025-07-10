@@ -180,3 +180,16 @@ function longestWord(){
    
 }
 longestWord()
+
+
+function secondLargest(){
+let arr=[10, 40, 30, 20, 50]
+arr.sort((a,b)=> a-b)
+arr.pop()
+let max=Math.max(...arr)
+console.log(max);
+
+
+
+}
+secondLargest()
