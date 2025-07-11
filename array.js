@@ -193,3 +193,130 @@ console.log(max);
 
 }
 secondLargest()
+
+let emails=[ "john@gmail.com",
+  "alice@yahoo.com",
+  "bob@gmail.com",
+  "jane@outlook.com"]
+
+  let filterEmails=emails.filter(e=> e==='john@gmail.com' || e==='jane@outlook.com'  )
+  console.log(filterEmails);
+  
+
+  let tempConve=[0,10,20,30]
+
+  let convergen=tempConve.map(e=> {
+    let F = (e * 9/5) + 32
+return F
+  })
+  console.log(convergen);
+  
+  function calculateAverage(){
+let marks = [70, 80, 90, 85];
+let num=marks.length
+let avg=marks.reduce((accu,e)=>{
+    return accu+e
+},0)
+return avg/num
+  }
+  console.log(calculateAverage())
+
+
+  function filterToDo(){
+let tasks = [
+  { task: "HTML Practice", done: true },
+  { task: "JS Loops", done: false },
+  { task: "Firebase Setup", done: false },
+];
+
+
+let filterTo=tasks.filter(e=>{
+    return !e.done
+    
+})
+
+
+
+filterTo.forEach(element => {
+    console.log(element.task);
+    
+});
+  }
+filterToDo()    
+
+function expensive(){
+let products = [
+  { name: "Phone", price: 12000 },
+  { name: "Laptop", price: 50000 },
+  { name: "Headphones", price: 2500 }
+];
+let prod=products.reduce((e,p)=>{
+
+    
+   if(e.price > p.price){
+    return e
+   }
+   else{
+    return p
+   }
+
+})
+console.log(prod);
+
+
+}
+expensive()
+
+
+function counterOccurance(){
+let nums = [1, 2, 3, 2, 4, 3, 2];
+
+
+let re=nums.reduce((acc,num)=> {
+    if(num===2){
+        acc++
+        }
+ 
+        return acc++
+},0)
+console.log(re);
+
+}
+console.log(counterOccurance())
+
+
+function removeDuplicate(){
+let names = ["Alice", "Bob", "Alice", "Eve"];
+
+let newArr=[... new Set(names)]
+console.log(newArr);
+
+}
+removeDuplicate()
+
+
+function multiplyByFive(){
+let arr = [1, 2, 3, 4, 5];
+let  mulit=arr.map(e=> e*5)
+console.log(mulit);
+
+}
+multiplyByFive()
+
+function allElemArePos(){
+let numbers = [1, 2, 3, -4, 5];
+let po=numbers.every(e=> e>0)
+console.log(po);
+
+}
+allElemArePos()
+
+function sumofEven(){
+let data = [1, 2, 3, 4, 5, 6];
+
+let newData=data.filter(e=> e%2==0).reduce((acc,e)=> acc+e)
+console.log(newData);
+
+
+}
+sumofEven()
