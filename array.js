@@ -279,6 +279,7 @@ let re=nums.reduce((acc,num)=> {
  
         return acc++
 },0)
+
 console.log(re);
 
 }
