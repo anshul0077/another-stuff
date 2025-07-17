@@ -68,3 +68,23 @@ Object.entries(course).forEach((e=>{
 
 
 
+
+const original={a:1,b:2}
+console.log({...original});
+
+const obj1={info:{score:200}}
+const obj11=JSON.parse(JSON.stringify(obj1))
+obj11.info.score=100
+console.log(obj1);
+
+console.log(obj11);
+
+
+let vvv="admin"
+
+const person={
+    [vvv]:52
+}
+console.log(person.admin);
+
+console.log(person?.profile?.name);
