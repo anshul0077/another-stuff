@@ -87,4 +87,65 @@ const person={
 }
 console.log(person.admin);
 
-console.log(person?.profile?.name);
+// console.log(person?.profile?.name);
+
+let student1={
+    names:"Anshul",
+    age:21,
+    course:20,
+}
+student1.ll="host"
+console.log(student1.ll);
+student1.course="JS"
+console.log(student1.course);
+
+function obj(fo){
+for (const key in fo) {
+console.log(key, fo[key]);
+
+}
+}
+
+
+obj(student1)
+
+
+
+
+
+let prices = { apple: 100, banana: 60, mango: 120 };
+
+function sum(pz){
+let sum=0
+
+for (const key in pz) {
+           sum+=(pz[key])
+ 
+}
+return sum
+
+}
+console.log(sum(prices))
+
+let inverted={}
+
+function invertedObj(a){
+for (const key in a) {
+  inverted[a[key]]=key
+  
+}
+
+
+
+
+}
+
+
+
+
+invertedObj({ a: 1, b: 2 })
+for (const key in inverted) {
+ console.log(key);
+ 
+}
+
