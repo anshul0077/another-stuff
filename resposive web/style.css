@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: saddlebrown;
+
+}
+#one-s{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding:1vw 2vw;
+    background-color: rgb(32, 32, 34);
+}
+#one-s .left1{
+    height: 97%;
+    width: 49.5%;
+
+    border-radius: 10px;
+}
+#one-s .right1{
+    color: white;
+    height: 97%;
+    width: 49.5%;
+background-color: rgb(46, 46, 46);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+#one-s .left1 img{
+height: 100%;
+width: 100%;
+border-radius: inherit;
+}
+#one-s .right1 .heading {
+    height: 50%;
+    width: 100%;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+
+}
+
+#one-s .right1 .content {
+    height: 50%;
+    width: 100%;
+
+
+}
+#one-s .right1 .content #p1{
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 100;
+    width: 80%;
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+#one-s .right1 .content #p2{
+font-size: 1vw;
+width: 80%;
+color: gray;
+font-weight: 100;
+}
+#one-s .right1 .content button{
+    padding: 10px;
+    margin-top: 1.5vw;
+    border: none;
+    border-radius: 7px;
+    
+}
