@@ -436,7 +436,9 @@ background-size: cover;
     border-radius: 10px;
 }
 @media(max-width:500px) {
+  
 #one-s{
+  padding-top: 3vw;
   height: 120%;
   flex-direction: column;
   gap: 9px;
@@ -568,7 +570,7 @@ width: 100%;
 }
 
 #four-s{
-padding-top :5px ;
+padding-top :14px ;
 flex-direction: column;
 height: 250%;
 gap: 10px;
@@ -609,6 +611,19 @@ padding: 3vw;
   width: 14vh;
   color: black;
   font-weight: 400;
+}
+#six-s .inside .f1{ 
+  font-size: 5vw;
+  padding-left: 2vw;
+}
+#six-s .inside .f2{
+  font-size: 8vw;
+}
+#six-s .inside .f3 button{
+width: 20vh;
+padding: 5vw;
+font-weight: 400;
+font-size: 4vw;
 }
 
 }
